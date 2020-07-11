@@ -1,0 +1,15 @@
+// Define tipografia
+html {
+  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+  color: $font-color;
+  background-color: $color-background;
+}
+
+.test {
+  height: 100px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

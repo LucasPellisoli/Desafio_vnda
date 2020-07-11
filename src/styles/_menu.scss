@@ -1,0 +1,80 @@
+.menu {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "logo cta cta"
+    "link link link";
+  grid-template-columns: 150px 1fr 150px;
+  background: $color-white;
+  padding: 20px 15px;
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+  }
+}
+.menu-logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  h1 {
+    margin: 0px;
+  }
+}
+
+.menu-links {
+  grid-area: link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      text-align: center;
+      width: 100%;
+      max-width: 100px;
+
+      a {
+        color: $font-color-primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.menu-cta {
+  grid-area: cta;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .menu {
+    grid-template-areas: "logo link cta";
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .menu {
+    grid-template-areas: "logo link cta";
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .menu {
+    grid-template-areas: "logo link cta";
+  }
+}

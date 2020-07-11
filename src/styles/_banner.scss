@@ -1,0 +1,23 @@
+.banner {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: $banner-image-mobile;
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    background-image: $banner-image-tablet;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    background-image: $banner-image-desktop;
+    height: 500px;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    background-image: $banner-image-large-desktop;
+  }
+}
