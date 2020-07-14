@@ -1,0 +1,72 @@
+.insta {
+  padding: 40px;
+  .insta-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .insta-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px;
+  }
+  .insta-card {
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+  .insta-text {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-details;
+    color: #000;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .insta-card:hover .insta-text {
+    opacity: 1;
+  }
+
+  .margin-top {
+    margin-top: 0px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    padding: 60px;
+    .insta-box {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .insta-card {
+      width: 30%;
+      min-width: 300px;
+    }
+    .margin-top {
+      margin-top: 0px;
+    }
+  }
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .margin-top {
+      margin-top: 60px;
+    }
+  }
+}

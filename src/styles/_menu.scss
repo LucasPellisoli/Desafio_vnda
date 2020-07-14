@@ -2,16 +2,20 @@
   display: grid;
   width: 100%;
   grid-template-areas:
-    "logo cta cta"
-    "link link link";
-  grid-template-columns: 150px 1fr 150px;
+    "logo cta"
+    "link link";
+  grid-template-columns: 50% 50%;
   background: $color-white;
   padding: 20px 15px;
+  padding-bottom: 0px;
+
   ul {
     list-style: none;
     display: flex;
     margin: 0px;
   }
+
+  z-index: 999;
 }
 .menu-logo {
   grid-area: logo;
@@ -23,29 +27,31 @@
   }
 }
 
+.menu-fixed {
+  position: fixed;
+}
+
 .menu-links {
   grid-area: link;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  ul {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-
-    li {
-      text-align: center;
-      width: 100%;
-      max-width: 100px;
-
-      a {
-        color: $font-color-primary;
-        text-decoration: none;
-      }
-    }
+  padding: 10px;
+  a {
+    color: $font-color-primary;
+    text-decoration: none;
+    margin: auto 15px;
   }
+  transition: 3s ease-in-out;
+}
+
+.menu-icon {
+  width: 25px;
+  margin: 0px 5px;
+}
+
+.menu-links-hide {
+  display: none;
 }
 .menu-cta {
   grid-area: cta;
@@ -62,19 +68,10 @@
 @media (min-width: 768px) {
   .menu {
     grid-template-areas: "logo link cta";
+    grid-template-columns: 150px 1fr 150px;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .menu {
-    grid-template-areas: "logo link cta";
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .menu {
-    grid-template-areas: "logo link cta";
-  }
 }

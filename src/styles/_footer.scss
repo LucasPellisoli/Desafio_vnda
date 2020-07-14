@@ -1,0 +1,130 @@
+.footer {
+  padding: 40px;
+  padding-bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  position: relative;
+
+  .footer-logo {
+    position: absolute;
+    top: -28px;
+    margin: auto;
+    font-size: 1.5rem;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    p {
+      background-color: $color-background;
+      width: auto;
+      padding: 10px;
+    }
+  }
+  .footer-box {
+    display: grid;
+    grid-template-areas:
+      "contato"
+      "menu-l"
+      "menu-r";
+    grid-template-columns: 1rf;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+
+  .col-r {
+    grid-area: menu-r;
+    align-items: flex-start;
+  }
+
+  .contato {
+    grid-area: contato;
+  }
+
+  .col-l {
+    grid-area: menu-l;
+  }
+
+  .cnpj {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .footer-title {
+    width: 100%;
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 20px auto;
+  }
+
+  .footer-email {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    input {
+      width: 80%;
+      background-color: $color-background;
+      border: 0px;
+      padding: 15px 10px;
+    }
+  }
+
+  .footer-icon {
+    width: 20px;
+  }
+
+  .footer-link {
+    display: flex;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  .sub-row {
+    display: flex;
+    flex-direction: row;
+
+    a:first-of-type {
+      padding-right: 15px;
+    }
+    a {
+      margin-bottom: 5px;
+    }
+  }
+
+  .input-cta {
+    font-size: 0.8rem;
+    width: 20%;
+    color: #333;
+    cursor: pointer;
+    min-width: 60px;
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    padding: 60px;
+    padding-bottom: 0px;
+
+    .footer-box {
+      grid-template-areas: "menu-l contato menu-r";
+      grid-template-columns: 1rf 2rf 1fr;
+    }
+
+    .col-r {
+      align-items: flex-end;
+    }
+  }
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+  }
+}

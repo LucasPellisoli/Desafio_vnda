@@ -8,6 +8,15 @@
     <script src="static/index.js"></script>
     <script src="https://use.fontawesome.com/6866aeaea9.js"></script>
     <title>Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav class="menu">
@@ -15,19 +24,27 @@
         <h1>Amazing</h1>
       </div>
       <div class="menu-links">
-        <ul>
-          <li><a href="#">menu</a></li>
-          <li><a>menu</a></li>
-          <li><a>menu</a></li>
-          <li><a>menu</a></li>
-          <li><a>menu</a></li>
-        </ul>
+        <a href="#">menu</a>
+        <a href="#">menu</a>
+        <a href="#">menu</a>
+        <a href="#">menu</a>
       </div>
       <div class="menu-cta">
         <ul>
-          <li>O</li>
-          <li>O</li>
-          <li>O</li>
+          <li>
+            <a href="#">
+              <img class="menu-icon" src="static/icons/search.svg" alt="" /></li>
+            </a>
+          <li>
+            <a href="#">
+              <img class="menu-icon" src="static/icons/user.svg" alt=""/>
+            </a>
+          </li>
+          <li>  
+            <a href="#">
+              <img class="menu-icon" src="static/icons/shopping-basket.svg" alt="" />
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -41,66 +58,186 @@
       <div class="supporter"></div>
     </div>
     <div class="collection-box">
-      <div class="collection-display">
-        <div class="collection-info">
-          <p class="collection-top-title">Lorem ipsum lorem dolor</p>
-          <p class="collection-title">Lorem ipsum dolor sit amet</p>
-          <p class="collection-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
-            vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
-            semper feugiat nibh sed pulvinar proin gravida.
-          </p>
-          <img class="collection-icon" src="static/down-arrow.svg" />
-        </div>
-        <div class="collection-product">
-          <div class="col col-margia-top">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/350x350?text=banner"
-                alt=""
-              />
-              <div class="card-body">
-                <p class="card-title">Título do banner</p>
-                <p class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempo.
-                </p>
-              </div>
+      <div class="collection-info">
+        <p class="collection-info-prefix-title">Lorem ipsum lorem dolor</p>
+        <p class="collection-info-title">Lorem ipsum dolor sit amet</p>
+        <p class="collection-info-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
+          vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+          semper feugiat nibh sed pulvinar proin gravida.
+        </p>
+      </div>
+      <div class="collection-cards">
+        <div class="col">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x350?text=Card" alt="" />
+            <div class="card-body">
+              <p class="card-title">Título do banner</p>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempo.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/350x200?text=banner"
-                alt=""
-              />
-              <div class="card-body">
-                <p class="card-title">Título do banner</p>
-                <p class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempo.
-                </p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Card" alt="" />
+            <div class="card-body">
+              <p class="card-title">Título do banner</p>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempo.
+              </p>
             </div>
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/350x350?text=banner"
-                alt=""
-              />
-              <div class="card-body">
-                <p class="card-title">Título do banner</p>
-                <p class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempo.
-                </p>
-              </div>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/300x350?text=Card" alt="" />
+            <div class="card-body">
+              <p class="card-title">Título do banner</p>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempo.
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <div class="collection-box-bg"></div>
+      <img class="down-arrow" src="static/icons/down-arrow.svg" alt="" />
     </div>
-
-    <div class="test"></div>
+    <div class="collection-box-v2">
+      <div class="collection-box-bg"></div>
+      <div class="col col-1">
+        <img
+          class="img-banner"
+          src="https://via.placeholder.com/350x450?text=Banner"
+          alt=""
+        />
+      </div>
+      <div class="col col-2">
+        <p class="collection-info-prefix-title">Lorem ipsum lorem dolor</p>
+        <p class="collection-info-title">Lorem ipsum dolor sit amet</p>
+        <p class="collection-info-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
+          vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+          semper feugiat nibh sed pulvinar proin gravida.
+        </p>
+        <a class="cta" href="#CTA">
+          <span>Call-to-action ></span>
+        </a>
+      </div>
+      <div class="col col-3 swiper-col">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="https://via.placeholder.com/400x300?text=Banner-1"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://via.placeholder.com/400x300?text=Banner-2"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://via.placeholder.com/400x300?text=Banner-3"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-button-prev swiper-button"></div>
+          <div class="swiper-button-next swiper-button"></div>
+        </div>
+      </div>
+    </div>
+    <div class="insta">
+      <p class="insta-title">@AmazingStore</p>
+      <div class="insta-box">
+        <div class="insta-card">
+          <img src="https://via.placeholder.com/400x400?text=Insta" alt="" />
+          <div class="insta-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
+              vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+              semper feugiat nibh sed pulvinar proin gravida.
+            </p>
+          </div>
+        </div>
+        <div class="insta-card margin-top">
+          <img src="https://via.placeholder.com/400x400?text=Insta" alt="" />
+          <div class="insta-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
+              vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+              semper feugiat nibh sed pulvinar proin gravida.
+            </p>
+          </div>
+        </div>
+        <div class="insta-card">
+          <img src="https://via.placeholder.com/400x400?text=Insta" alt="" />
+          <div class="insta-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
+              vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+              semper feugiat nibh sed pulvinar proin gravida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-logo">
+        <p>Amazing</p>
+      </div>
+      <div class="footer-box">
+        <div class="col-l col">
+          <p class="footer-title">Sobre</p>
+          <div class="sub-row">
+            <a>Produtos</a>
+            <a>Coleção inverno</a>
+          </div>
+          <div class="sub-row">
+            <a>Coleções</a>
+            <a>Coleção verão</a>
+          </div>
+        </div>
+        <div class="contato col">
+          <p class="footer-title">Contato</p>
+          <div class="footer-email">
+            <input type="email" placeholder="Email" />
+            <div class="input-cta">
+              <span class="input-cta">ENVIAR ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-r col">
+          <div >
+            <p class="footer-title">Rede Sociais</p>
+            <a class="footer-link" href="#AmazingStore">
+              <img class="footer-icon" src="static/icons/instagram.svg" alt="" /> <span>@AmazingStore</span>
+            </a>
+            <a class="footer-link" href="#AmazingStore">
+              <img class="footer-icon" src="static/icons/facebook.svg" alt="" /> <span>AmazingStore</span>
+            </a>
+          </div>
+         
+        </div>
+      </div>
+      <div class="cnpj">
+        <p>@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+      </div>
+    </div>
   </body>
 </html>

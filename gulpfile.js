@@ -7,6 +7,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var concat = require("gulp-concat");
 const babel = require("gulp-babel");
 const minify = require("gulp-minify");
+var browserify = require("gulp-browserify");
 
 sass.compiler = require("node-sass");
 
@@ -22,7 +23,7 @@ gulp.task("sass", function () {
 
 gulp.task("script", function () {
   return gulp
-    .src("./src/scripts/**/*.js")
+    .src("./src/js/**/*.js")
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -37,7 +38,7 @@ gulp.task("sass:watch", function () {
 });
 
 gulp.task("script:watch", function () {
-  gulp.watch("./src/scripts/**/*.js", gulp.parallel(["script"]));
+  gulp.watch("./src/js/**/*.js", gulp.parallel(["script"]));
 });
 
 gulp.task("dev", gulp.parallel(["sass:watch", "script:watch"]));
