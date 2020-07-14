@@ -4,6 +4,7 @@
   width: 100%;
   border-top: 1px solid #ccc;
   position: relative;
+  background-color: $color-details;
 
   .footer-logo {
     position: absolute;
@@ -14,10 +15,14 @@
     left: 0px;
     display: flex;
     justify-content: center;
+
     p {
       background-color: $color-background;
       width: auto;
-      padding: 10px;
+      border-radius: 25px;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-top: 0px;
     }
   }
   .footer-box {
@@ -71,7 +76,7 @@
     border-bottom: 1px solid #ccc;
     input {
       width: 80%;
-      background-color: $color-background;
+      background-color: $color-details;
       border: 0px;
       padding: 15px 10px;
     }
