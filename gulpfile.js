@@ -18,19 +18,21 @@ gulp.task("sass", function () {
     .pipe(sass.sync().on("error", sass.logError))
     .pipe(cssnano())
     .pipe(sourcemaps.write("./"))
-    .pipe(gulp.dest("./src/dist/css"));
+    .pipe(gulp.dest("./dist/css"));
 });
 
 gulp.task("script", function () {
   return gulp
     .src("./src/js/**/*.js")
+    .pipe(sourcemaps.init())
     .pipe(
       babel({
         presets: ["@babel/env"],
       })
     )
     .pipe(minify())
-    .pipe(gulp.dest("./src/dist/js"));
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("./dist/js"));
 });
 
 gulp.task("sass:watch", function () {
