@@ -18,7 +18,7 @@ gulp.task("sass", function () {
     .pipe(sass.sync().on("error", sass.logError))
     .pipe(cssnano())
     .pipe(sourcemaps.write("./"))
-    .pipe(gulp.dest("./dist/css"));
+    .pipe(gulp.dest("./src/dist/css"));
 });
 
 gulp.task("script", function () {
@@ -30,7 +30,7 @@ gulp.task("script", function () {
       })
     )
     .pipe(minify())
-    .pipe(gulp.dest("./dist/js"));
+    .pipe(gulp.dest("./src/dist/js"));
 });
 
 gulp.task("sass:watch", function () {
