@@ -4,10 +4,8 @@ var sass = require("gulp-sass");
 var cssnano = require("gulp-cssnano");
 var sourcemaps = require("gulp-sourcemaps");
 var sourcemaps = require("gulp-sourcemaps");
-var concat = require("gulp-concat");
 const babel = require("gulp-babel");
 const minify = require("gulp-minify");
-var browserify = require("gulp-browserify");
 
 sass.compiler = require("node-sass");
 
